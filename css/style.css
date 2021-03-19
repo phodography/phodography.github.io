@@ -454,6 +454,13 @@ color: #9A0525;
   margin-bottom: 30px;
 }
 
+#fh5co-counter .event-wrap .event-col2,
+#fh5co-event .event-wrap .event-col2 {
+  width: 100%;
+  float: center;
+  margin-bottom: 30px;
+}
+
 #fh5co-counter {
   height: 600px;
 }
@@ -1084,7 +1091,7 @@ form label {
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
   color: #9A0525;
-  font-size: 30px;
+  font-size: 36px;
 }
 .couple-half .groom, .couple-half .bride {
   float: left;
@@ -1124,11 +1131,11 @@ form label {
 }
 .couple-half .desc-groom {
   padding-right: 180px;
-  text-align: right;
+  text-align: justify;
 }
 .couple-half .desc-bride {
   padding-left: 180px;
-  text-align: left;
+  text-align: justify;
 }
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
@@ -1137,11 +1144,11 @@ form label {
   }
   .couple-half .desc-groom {
     padding-right: 0;
-    text-align: center;
+    text-align: justify;
   }
   .couple-half .desc-bride {
     padding-left: 0;
-    text-align: center;
+    text-align: justify;
   }
 }
 
@@ -1197,7 +1204,7 @@ form label {
   font-size: 60px;
   margin-bottom: 10px;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 400;
   color: #9A0525;
   font-family: "Sacramento", Arial, serif;
 }

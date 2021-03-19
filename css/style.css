@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav #fh5co-logo {
   font-size: 40px;
+  color: #9A0525;
   margin: 0;
   padding: 0;
   line-height: 40px;
@@ -108,7 +109,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav a {
   padding: 5px 10px;
-  color: #fff;
+  color: #9A0525;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
@@ -129,13 +130,13 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 14px;
   padding: 30px 10px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: #9A0525;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
-  color: white;
+color: #9A0525;
 }
 .fh5co-nav ul li.has-dropdown {
   position: relative;
@@ -301,6 +302,8 @@ h1, h2, h3, h4, h5, h6, figure {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-position: top center;
+  background-image: url(../images/BGleaves.png);
   width: 100%;
 }
 
@@ -327,6 +330,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 900px;
   display: table;
   width: 100%;
+  margin-top: 15%;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
@@ -347,11 +351,13 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 600px;
   display: table;
   width: 100%;
+  margin-top: 15%;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover-sm .display-t,
   .fh5co-cover.fh5co-cover-sm .display-tc {
     height: 400px;
+    margin-top: 15%;
   }
 }
 
@@ -370,11 +376,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .fh5co-heading h2,
 #fh5co-event .fh5co-heading h2 {
-  color: #fff;
+  color: #9A0525;
 }
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
-  color: rgba(255, 255, 255, 0.5);
+  color: #9A0525;
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
@@ -404,7 +410,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(154, 5, 37, 0.5);
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   width: 100%;
@@ -423,8 +429,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3 {
   font-size: 20px;
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #9A0525;
+  border-bottom: 1px solid rgba(154, 5, 37, 0.5);
   display: block;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -434,11 +440,11 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap p,
 #fh5co-event .event-wrap span {
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(154, 5, 37, 0.8);
 }
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i {
-  color: white;
+  color: #9A0525;
   font-size: 20px;
 }
 #fh5co-counter .event-wrap .event-col,
@@ -878,6 +884,9 @@ form label {
   .fh5co-cover .display-tc h2 {
     font-size: 16px;
     color: #9A0525;
+  }
+  .fh5co-cover {
+    background-image: url(../images/BGmobile.png);
   }
 }
 #fh5co-header .display-tc .btn,
@@ -1552,106 +1561,6 @@ form label {
   outline: none;
 }
 
-.fh5co-nav-toggle {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  text-decoration: none;
-}
-.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-  background: #444;
-}
-.fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
-  outline: none;
-  border-bottom: none !important;
-}
-.fh5co-nav-toggle i {
-  position: relative;
-  display: inline-block;
-  width: 25px;
-  height: 2px;
-  color: #252525;
-  font: bold 14px/.4 Helvetica;
-  text-transform: uppercase;
-  text-indent: -55px;
-  background: #252525;
-  transition: all .2s ease-out;
-}
-.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
-  content: '';
-  width: 25px;
-  height: 2px;
-  background: #252525;
-  position: absolute;
-  left: 0;
-  transition: all .2s ease-out;
-}
-.fh5co-nav-toggle.fh5co-nav-white > i {
-  color: #fff;
-  background: #fff;
-}
-.fh5co-nav-toggle.fh5co-nav-white > i::before, .fh5co-nav-toggle.fh5co-nav-white > i::after {
-  background: #fff;
-}
-
-.fh5co-nav-toggle i::before {
-  top: -7px;
-}
-
-.fh5co-nav-toggle i::after {
-  bottom: -7px;
-}
-
-.fh5co-nav-toggle:hover i::before {
-  top: -10px;
-}
-
-.fh5co-nav-toggle:hover i::after {
-  bottom: -10px;
-}
-
-.fh5co-nav-toggle.active i {
-  background: transparent;
-}
-
-.fh5co-nav-toggle.active i::before {
-  top: 0;
-  -webkit-transform: rotateZ(45deg);
-  -moz-transform: rotateZ(45deg);
-  -ms-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
-}
-
-.fh5co-nav-toggle.active i::after {
-  bottom: 0;
-  -webkit-transform: rotateZ(-45deg);
-  -moz-transform: rotateZ(-45deg);
-  -ms-transform: rotateZ(-45deg);
-  -o-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-}
-
-.fh5co-nav-toggle {
-  position: absolute;
-  right: 0px;
-  top: 10px;
-  z-index: 21;
-  padding: 6px 0 0 0;
-  display: block;
-  margin: 0 auto;
-  display: none;
-  height: 44px;
-  width: 44px;
-  z-index: 2001;
-  border-bottom: none !important;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-nav-toggle {
-    display: block;
-  }
-}
-
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
@@ -1686,8 +1595,8 @@ form label {
   border: 2px solid #9A0525;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f366a3 !important;
-  border-color: #f366a3 !important;
+  background: #9A0525 !important;
+  border-color: #9A0525 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
